@@ -1,0 +1,128 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	padding: 100px;
+	font-family: montserrat;
+	background-color: #EDEDED;
+}
+div.space-enter{
+	height: 100px;
+}
+.navbar{
+	display: flex;
+	justify-content: space-between;
+}
+
+/*NAVBAR ITEM*/
+.navbar div.nav-item ul{
+	list-style: none;
+}
+.navbar div.nav-item ul{
+	display: flex;
+}
+.navbar div.nav-item ul li{
+	padding-left: 30px;
+}
+.navbar div.nav-item ul li a{
+	font-size: 18px;
+	color: #606060;
+	text-decoration: none;
+}
+
+/*NAVBAR LOGO*/
+.navbar div.nav-logo a{
+	font-size: 22px;
+	font-weight: bold;
+	color: #606060;
+	text-decoration: none;
+}
+
+/*CONTAINER*/
+div.container{
+	padding: 0 50px;
+}
+
+
+/*CAROUSEL*/
+div.carousel-container{
+	max-width: 100%;
+	position: relative;
+	margin: auto;
+}
+div.carousel-container div.carousel-container-item{
+	display: none;
+}
+a.Back, a.Next{
+	cursor: pointer;
+	position: absolute;
+	top: 48%;
+	width: auto;
+	margin-top: -23px;
+	padding: 17px;
+	color: grey;
+	font-weight: bold;
+	font-size: 50px;
+	transition: 0.4s ease;
+	border-radius: 0 5px 5px 0;
+	user-select: none;
+	text-decoration: none;
+}
+a.Next{
+	right: 0;
+	border-radius:  4px 0 0 4px;
+}
+a.Back:hover, a.Next:hover{
+	background-color: rgba(0,0,0,0.8);
+}
+
+div.Info{
+	color: white;
+	font-size: 16px;
+	padding: 10px 14px;
+	position: absolute;
+	bottom: 10px;
+	width: 100%;
+	text-align: center;
+}
+div.MessegeInfo{
+	color: #ffff;
+	font-size: 14px;
+	padding: 10px 14px;
+	position: absolute;
+	top: 0;
+}
+
+span.dots{
+	cursor: pointer;
+	height: 16px;
+	width: 16px;
+	margin: 0 3px;
+	background-color: grey;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.5s ease;
+}
+.enable, .dots:hover{
+	background-color: yellow;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.4s;
+  animation-name: fade;
+  animation-duration: 1.4s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .5}
+  to {opacity: 2}
+}
+
+@keyframes fade {
+  from {opacity: .5}
+  to {opacity: 2}
+}
+
+
